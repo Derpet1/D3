@@ -1,4 +1,4 @@
-
+// Старі таски залишено закоментованими
 // exports.myTask = (callback) => {
 //   console.log('Task 1: Hello Spanchuk!');
 //   callback();
@@ -16,11 +16,10 @@
 //   console.log('Task 4: Hello Spanchuk!');
 // };
 
-
 const gulp = require('gulp');
 
 exports.cloneFiles = async () => {
-  console.log('Копіювання HTML файлів з app/ в public...');
-  return gulp.src('app/*.html')
+  console.log('Копіювання HTML та CSS файлів з app/ в public...');
+  return gulp.src(['app/*.html', 'app/*.css']) // Додаємо CSS
     .pipe(gulp.dest('public'));
 };
