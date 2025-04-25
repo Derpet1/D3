@@ -17,6 +17,25 @@
 // };
 
 const gulp = require('gulp');
+const minifyCSS = require('gulp-minify-css');
+const uglify = require('gulp-uglify');
+
+gulp.task('minifyCSS', () => {
+    return gulp.src('css/*.css')
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('minifyJS', () => {
+    return gulp.src('js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('default', gulp.parallel('minifyCSS', 'minifyJS'));
+
+
+const gulp = require('gulp');
 
 exports.cloneFiles = async () => {
   console.log('Копіювання HTML та CSS файлів з app/ в public...');
