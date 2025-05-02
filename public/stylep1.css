@@ -1,4 +1,23 @@
-.element1 {
+.element {
+    border: 0px solid rgba(61, 52, 52, 1);
+    border-radius: 11px;
+    background: linear-gradient(
+      52deg,
+      rgba(15, 37, 110, 1) 12%,
+      rgba(32, 178, 7, 1) 84%
+    );
+    background-blend-mode: normal;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Додаткові варіанти кольору, якщо знадобляться */
+  .element1 {
     background-color: rgba(207, 169, 169, 0.5);
   }
   
@@ -12,12 +31,5 @@
   
   .element4 {
     background-color: rgba(222, 191, 191, 0.5);
-  }
-  
-  p {
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
   }
   
