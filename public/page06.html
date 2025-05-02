@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 06</title>
+  <!-- Підключаємо jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <p class="blink">Мерехтливий текст</p>
+
+  <script>
+    // Підключаємо стилі до <p> після завантаження сторінки
+    $(document).ready(function() {
+      $("head").append("<link href='stylep1.css' rel='stylesheet' />");
+
+      // Функція для мерехтіння тексту
+      function blink_text() {
+        $('.blink').fadeOut(500).fadeIn(500);
+      }
+
+      // Викликаємо функцію кожну секунду
+      setInterval(blink_text, 1000);
+    });
+  </script>
+
+</body>
+</html>
