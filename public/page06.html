@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Page 06</title>
-  <!-- Підключаємо jQuery -->
+  <!-- Підключення jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="stylep1.css">
 </head>
 <body>
 
+  <div class="navigation">
+    <a href="index.html">Повернутися на головну сторінку</a>
+  </div>
+
   <p class="blink">Мерехтливий текст</p>
 
+  <img src="https://cdn.27.ua/sc--media--prod/default/ba/82/db/ba82db8b-d560-449a-9d71-612c75f66614.jpg" 
+       alt="Зображення" class="blink-image">
+
   <script>
-    // Підключаємо стилі до <p> після завантаження сторінки
-    $(document).ready(function() {
-      $("head").append("<link href='stylep1.css' rel='stylesheet' />");
+    function blink_text() {
+      $('.blink').fadeOut(500).fadeIn(500);
+    }
 
-      // Функція для мерехтіння тексту
-      function blink_text() {
-        $('.blink').fadeOut(500).fadeIn(500);
-      }
+    function blink_image() {
+      $('.blink-image').fadeOut(500).fadeIn(500);
+    }
 
-      // Викликаємо функцію кожну секунду
-      setInterval(blink_text, 1000);
-    });
+    setInterval(blink_text, 1000);
+    setInterval(blink_image, 1000);
   </script>
 
 </body>
