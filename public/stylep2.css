@@ -18,8 +18,10 @@ p.blink {
   
   img.blink-image {
     display: block;
-    margin: 30px auto;
-    width: 300px;
+    margin: 20px auto;
+    width: 200px;           
+    max-width: 90%;         
+    height: auto;
     border-radius: 10px;
     transition: opacity 0.5s ease-in-out;
   }
