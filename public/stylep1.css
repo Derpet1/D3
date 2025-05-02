@@ -1,0 +1,23 @@
+.element1 {
+    background-color: rgba(207, 169, 169, 0.5);
+  }
+  
+  .element2 {
+    background-color: rgba(209, 174, 174, 0.5);
+  }
+  
+  .element3 {
+    background-color: rgba(214, 180, 180, 0.5);
+  }
+  
+  .element4 {
+    background-color: rgba(222, 191, 191, 0.5);
+  }
+  
+  p {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
