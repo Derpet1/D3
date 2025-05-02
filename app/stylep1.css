@@ -16,7 +16,7 @@ body {
     margin-bottom: 10px;
   }
   
-  /* Додаткові варіанти кольору, якщо знадобляться */
+ p {
   .element1 {
     background-color: rgba(207, 169, 169, 0.5);
   }
@@ -32,4 +32,4 @@ body {
   .element4 {
     background-color: rgba(222, 191, 191, 0.5);
   }
-  
+  }
