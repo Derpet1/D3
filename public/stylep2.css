@@ -11,8 +11,16 @@ p.blink {
     text-align: center;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin: 40px auto;
     width: fit-content;
+  }
+  
+  img.blink-image {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
   }
   
