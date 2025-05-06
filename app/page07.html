@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Snippet Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #content {
+      background: #f0f0f0;
+      padding: 10px;
+      margin-top: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Сторінка зі сніпетом jQuery</h1>
+  <button id="toggle">Показати/Приховати текст</button>
+  <div id="content" style="display: none;">
+    Це прихований текст!
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('#toggle').click(function() {
+        $('#content').slideToggle();
+      });
+    });
+  </script>
+
+</body>
+</html>

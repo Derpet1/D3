@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ярослав Шпанчук - Веб-розробник</title>
   <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -38,28 +39,42 @@
         </p>
       </div>
 
-      <!-- 🔗 Посилання на сторінку page02.html -->
+      <!-- 🔗 Посилання на інші сторінки -->
       <div class="navigation">
         <a href="page02.html" class="btn">Перейти на сторінку 2</a>
       </div>
-
-      <!-- 🔗 Правильне посилання на сторінку page03.html -->
       <div class="navigation">
         <a href="page03.html" class="btn">Перейти на сторінку 3</a>
       </div>
-      
-      <!-- 🔗 Правильне посилання на сторінку page04.html -->
       <div class="navigation">
         <a href="page04.html">Перейти на сторінку 04</a>
       </div>
-
       <div class="navigation">
         <a href="page05.html">Перейти на сторінку 05</a>
       </div>
-
       <div class="navigation">
         <a href="page06.html">Перейти на сторінку 06</a>
       </div>
+      <div class="navigation">
+        <a href="page07.html">Перейти на сторінку 07 (jQuery)</a>
+      </div>
+
+      <!-- ✅ Доданий сніпет jQuery безпосередньо на головній -->
+      <div class="snippet-section">
+        <h2>jQuery Сніпет: Показати/Приховати текст</h2>
+        <button id="toggle">Показати/Приховати</button>
+        <div id="content" style="display: none; background: #eee; padding: 10px; margin-top: 10px;">
+          Це динамічний блок, який показується або приховується за допомогою jQuery.
+        </div>
+      </div>
+
+      <script>
+        $(document).ready(function() {
+          $('#toggle').click(function() {
+            $('#content').slideToggle();
+          });
+        });
+      </script>
 
       <div class="contact-info">
         <p>📧 aroslavspanchuk@gmail.com</p>
@@ -74,4 +89,5 @@
   </div>
 </body>
 </html>
+
 
